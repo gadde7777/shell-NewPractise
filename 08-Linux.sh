@@ -1,6 +1,6 @@
 #!/bin/bash
 NUM1=100
-NUM2=300
+NUM2=Gadde
 
 total=$(($NUM1+$NUM2))
 
