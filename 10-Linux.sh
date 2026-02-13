@@ -1,8 +1,8 @@
 #!/bin/bash
-Number=25
+NUMBER=25
 
-if [$Number -gt 25]; then
+if [ $NUMBER -gt 30 ]; then
 
-echo "Number is : $Number gt than 25"
+echo "Number is : $NUMBER has 25"
 
 fi
