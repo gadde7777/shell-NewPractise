@@ -1,4 +1,4 @@
 #!/bin/bash
-Timestamp =$(Date)
+Timestamp =$(date)
 
 echo "date is :$(Timestamp)"
