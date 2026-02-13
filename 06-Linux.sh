@@ -5,7 +5,7 @@ echo "Script Executed at Timestamp : $START_TIME"
 
 sleep 10
 
-END_TIME=$(DATE +%S)
+END_TIME=$(date +%S)
 
 Total_time=$($END_TIME -$START_TIME)
 
