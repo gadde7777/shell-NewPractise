@@ -15,10 +15,10 @@ Validate()
 
 if [ $1 -ne 0 ];then
 
-echo "$2 : Install failure"
+echo "$2 : Install failure" | tee -a $LOGS_FILE
 exit 1
 else
-echo "$2 : Install Success"
+echo "$2 : Install Success" | tee -a $LOGS_FILE
 fi
 }
 
