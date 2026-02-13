@@ -1,6 +1,6 @@
 #!/bin/bash
 Number=25
 
-if( $Number -gt 20 ); then
+if [$Number -gt 25] then
 
-echo "Number is :$Number"
+echo "Number is : $Number gt than 25"
