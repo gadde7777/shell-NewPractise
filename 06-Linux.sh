@@ -1,4 +1,12 @@
 #!/bin/bash
-Timestamp=$(date +%s)
+START_TIME=$(date +%s)
 
-echo "Timestamp today is : $Timestamp"
+echo "Script Executed at Timestamp : $START_TIME"
+
+sleep 10
+
+END_TIME=$(DATE +%S)
+
+Total_time=$($END_TIME -$START_TIME)
+
+echo "Script Executed in : $Total_time"
