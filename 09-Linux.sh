@@ -1,5 +1,5 @@
 #!/bin/bash
-FRUITS=("apple","orange","tigers")
+FRUITS=("apple" "tigers" "GRASS")
 
 echo "fruits are ${FRUITS[@]}"
 
