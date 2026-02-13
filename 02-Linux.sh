@@ -1,15 +1,7 @@
 #!/bin/bash
 # This is comment
 
-today=wednesday
-if ( today != sunday)
-{
-print ("go to school")
-}
-else
-{
-print ("Take Holiday")
-}
+
 
 PERSON1=SURESH
 PERSON2=RAMESH
