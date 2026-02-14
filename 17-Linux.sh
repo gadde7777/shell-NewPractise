@@ -32,7 +32,7 @@ Validate $? "$package Installation"
 
 else
 echo "$package aleady installed. Skipping now"
-
+fi
 done
 
 # dnf install nginx -y &>> $LOGS_FILE
