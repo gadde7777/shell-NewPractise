@@ -21,10 +21,10 @@ mkdir -p $LOGS_FOLDER
 Validate()
 {
   if [ $1 -ne 0 ]; then
-  echo -e "$2..$R FAIL $N | tee -a $LOGS_FILE
+  echo -e "$2..$R FAIL $N"| tee -a $LOGS_FILE
   exit 1
   else
-  echo -e '$2..$G SUCC | tee -a $LOGS_FILE
+  echo -e"$2..$G SUCC"| tee -a $LOGS_FILE
   fi
 }
 
@@ -40,14 +40,3 @@ else
     echo "$package aleady installed. Skipping now"
 fi
 done
-
-# dnf install nginx -y &>> $LOGS_FILE
-# Validate $? "Nginx Installation"
-
-
-# dnf install mysql -y &>> $LOGS_FILE
-# Validate $? "Mysql Installation"
-
-
-# dnf install nodejs -y &>> $LOGS_FILE
-# Validate $? "Nodejs Install"
