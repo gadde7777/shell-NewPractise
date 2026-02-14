@@ -23,15 +23,14 @@ Validate()
 
 for package in $@
 do
-
-dnf list installed $package &>>$LOGS_FILE
-if [$? -ne 0 ]; then 
-echo "$package not installed, Installing now"
-dnf install $package -y &>> $LOGS_FILE
-Validate $? "$package Installation"
+    dnf list installed $package &>>$LOGS_FILE
+    if [$? -ne 0 ]; then 
+    echo "$package not installed, Installing now"
+    dnf install $package -y &>> $LOGS_FILE
+    Validate $? "$package Installation"
 
 else
-echo "$package aleady installed. Skipping now"
+    echo "$package aleady installed. Skipping now"
 fi
 done
 
